@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <title>BMI Calculator</title>
+</head>
+<body style="overflow-x: hidden;">
+
+    <div id="scrollable">
+        <div id="title-div">
+            <h1 id="title">Body Mass Index (BMI) Calculator</h1>
+            <p id="by-me">by <a id="eren-insta" href="https://www.instagram.com/erenn.akdag/">Eren Akdag</a></p>
+        </div>
+    
+        <div id="article-div1">
+            <h2 id="artic-title1">What is BMI?</h2>
+            <p id="article1">Body mass index (BMI) is a value derived from the mass (weight) and height of a person.</p>
+        </div>
+    
+        <div id="article-div2">
+            <h2 id="artic-title2">How to calculate BMI?</h2>
+            <p id="article2">The BMI is defined as the body mass divided by the square of the body height,
+                 and is expressed in units of kg/m2,
+                  resulting from mass in kilograms and height in metres.</p>
+            <p>Here is a chart showing the spectrum of BMI values:</p>
+            <img id="chart-img" src="https://upload.wikimedia.org/wikipedia/commons/c/cc/BMI_chart.png" alt="BMI Chart" height="300" width="300">
+            <p>BMI values between 18.5 and 24.99 are considered normal whereas below 18.5 is underweight and above 25 is overweight.</p>    
+        </div>
+
+        <div id="article-div3">
+            <h2 id="artic-title3">Who shouldn't use a BMI Calculator?</h2>
+            <p id="article3"> 
+                BMI is not used for muscle builders, 
+                long distance athletes, pregnant women, the elderly or young children. 
+                This is because BMI does not take into account whether the weight is carried as muscle or fat, just the number. 
+                Those with a higher muscle mass, such as athletes, may have a high BMI but not be at greater health risk. 
+                Those with a lower muscle mass, such as children 
+                who have not completed their growth or the elderly who may be losing some muscle mass may have a lower BMI. 
+                During pregnancy and lactation, a woman's body composition changes, so using BMI is not appropriate.
+            </p>
+            <br>
+            <p id="wiki">For more information visit <a id="link-to-wiki" href="https://en.wikipedia.org/wiki/Body_mass_index">Wikipedia</a>.</p>
+        </div>
+    </div>
+
+    <div id="bmi-div">
+        <h2 id="form-title">Calculator</h2>
+        <div id="form-p">
+            <p>Weight: </p>
+            <p>Height: </p>
+        </div>
+        <form id="bmi-from">
+            <div id="w-div">
+                <input type="number" name="weight" id="weight">
+                <select name="w-unit" id="w-unit">
+                    <option value="kg" selected>kg</option>
+                    <option value="lbs">lbs</option>
+                </select>
+            </div>
+
+            <div id="h-div">
+                <select name="foot" id="foot">
+                    <option value="" selected></option>
+                    <option value="4">4'</option>
+                    <option value="5">5'</option>
+                    <option value="6">6'</option>
+                    <option value="7">7'</option>
+                </select>
+    
+                <select name="inches" id="inches">
+                    <option value="" selected></option>
+                    <option value="0">0"</option>
+                    <option value="1">1"</option>
+                    <option value="2">2"</option>
+                    <option value="3">3"</option>
+                    <option value="4">4"</option>
+                    <option value="5">5"</option>
+                    <option value="6">6"</option>
+                    <option value="7">7"</option>
+                    <option value="8">8"</option>
+                    <option value="9">9"</option>
+                    <option value="10">10"</option>
+                    <option value="11">11</option>
+                </select>
+    
+                <span>or</span>
+    
+                <input type="number" name="height" id="height">
+                <select name="h-unit" id="h-unit">
+                    <option value="cm" selected>cm</option>
+                    <option value="inch">inch</option>
+                </select>
+                <button id="submit">CALCULATE BMI</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="footer-div">
+        <hr>
+        <footer> &copy; Copyright 2021 Eren Akdag. Eren Akdag is a self-taught programmer. <br> 
+        &nbsp; &nbsp; Contact me under: <a id="gmail" href="https://mail.google.com/">erennakdag10@gmail.com</a> 
+        or +49 176 23262954</footer>
+    </div>
+
+</body>
+</html>
